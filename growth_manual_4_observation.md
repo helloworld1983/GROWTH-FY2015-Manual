@@ -166,6 +166,9 @@ EXPOSURE=             1.80E+03 / exposure specified via command line
 |baseline|I|32768|uint16_t|トリガした波形の最初の4サンプルの平均値|
 |waveform|I×N|32768|uint16_t|波形データ(N=nSamples)|
 
+基礎性能測定試験などで、waveformを記録する方程式で測定を実施した場合は、fvなどで波形を確認できます。
+
+
 ### GPS extension
 
 GPSの1PPSにあわせて記録されたFPGAのローカルクロックのtime tagと、GPSの絶対時刻の文字データを記録しています。後段の時刻付ソフトウエアで較正データとして使用します。
@@ -173,6 +176,6 @@ GPSの1PPSにあわせて記録されたFPGAのローカルクロックのtime t
 |TTYPE|TFORM|TZERO|データ型|FPGAローカルクロック(48bit; 20ns刻み)|
 |:---:|:---:|:---:|:---:|:---|
 |timeTag|K|-|int64_t|FPGAローカルクロックのtime tag(48bit; 20ns刻み)|
-|gpsTime|20A|char[20]|GPSのYYMMDD HH:MM:SS|
+|gpsTime|20A|-|char[20]|GPSのYYMMDD HH:MM:SS|
 |unixTime|J|2147483648|uint32_t|Raspberry Pi上のUNIX Time|
 

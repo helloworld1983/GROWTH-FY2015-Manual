@@ -58,12 +58,7 @@ TBD: 電源系の系統図、どこでどのようなリミットがかかって
 
 FPGAロジックはUSBコネクタ経由で、Tokudenの専用ソフトウエアを使用して書き込みます。詳細はボードに付属のマニュアルを参照してください。
 
-FPGAロジックのソースコードとコンパイル済みのbitファイルは、gitレポジトリとして管理しています。依存しているVHDLLibraryとともに、以下のようにしてcloneしてください。
-
-```
-git clone hikari:git/GROWTH-FY2015-FPGA.git
-git clone hikari:git/VHDLLibrary.git
-```
+FPGAロジックのソースコードとコンパイル済みのbitファイルは、gitレポジトリとして管理しています。依存しているVHDLLibraryとともに、Chapter 1を参照して取得してください。
 
 ISEのプロジェクトファイルは```GROWTH-FY2015-FPGA.git/ISE/GROWTH-FY2015-FPGA.xise```です。
 
@@ -72,10 +67,9 @@ ISEのプロジェクトファイルは```GROWTH-FY2015-FPGA.git/ISE/GROWTH-FY20
 
 ### 高圧電源
 
-MatsusadaのOPTON-1PA-12(プラスHV)もしくはOPTON-1NA-12(マイナスHV)を使用しています。
-接続するPMT+ディバイダの特性に合わせて選択します。
+Matsusadaの[OPTON-1PA-12](http://www.matsusada.co.jp/hvps/opton-a/)(プラスHV)もしくは[OPTON-1NA-12](http://www.matsusada.co.jp/hvps/opton-a/)(マイナスHV)を使用しています。接続するPMT+ディバイダの特性に合わせて極性を選択します。
 
-高圧電源の12V電源電圧は、Raspberry PiからMOSFETを操作することでON/OFFできるようになっています。
-詳細は以下のRaspberry Piの章を参照してください。
+高圧電源の12V電源電圧は、Raspberry PiからMOSFETを操作することでON/OFFできるようになっています。詳細は以下のRaspberry Piの章を参照してください。
 
-
+- [OPTON-Aシリーズのデータシート(PDF)](http://www.matsusada.co.jp/pdf/opton-a.pdf)
+- 購入時に依頼すると、ピン配置、HV値設定方法を説明したもう少し詳細なデータシートが入手できます。

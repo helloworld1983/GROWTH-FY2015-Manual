@@ -1,6 +1,6 @@
 body {
   font-family: Helvetica, arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.6;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -61,25 +61,25 @@ h1 {
   color: black; }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
   border-bottom: 1px solid #cccccc;
   color: black; }
 
 h3 {
-  font-size: 18px; }
-
-h4 {
   font-size: 16px; }
 
-h5 {
+h4 {
   font-size: 14px; }
+
+h5 {
+  font-size: 12px; }
 
 h6 {
   color: #777777;
   font-size: 14px; }
 
 p, blockquote, ul, ol, dl, li, table, pre {
-  margin: 15px 0; }
+  margin: 10px 0; }
 
 hr {
   background: transparent url("../../images/modules/pulls/dirty-shade.png") repeat-x 0 0;
@@ -159,8 +159,13 @@ blockquote {
     margin-bottom: 0; }
 
 table {
-  margin: 0;
-  padding: 0; }
+  padding: 0; 
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  }
+  table th {
+  	background: #ddd;
+  }
   table tr {
     border-top: 1px solid #cccccc;
     background-color: white;
@@ -173,19 +178,19 @@ table {
       border: 1px solid #cccccc;
       text-align: left;
       margin: 0;
-      padding: 6px 13px; }
+      padding: 2px 5px; }
     table tr td {
       border: 1px solid #cccccc;
       text-align: left;
       margin: 0;
-      padding: 6px 13px; }
+      padding: 2px 5px; }
     table tr th :first-child, table tr td :first-child {
-  margin-top: 0; }
+      margin-top: 0; }
     table tr th :last-child, table tr td :last-child {
-        margin-bottom: 0; }
+      margin-bottom: 0; }
 
 img {
-  max-width: 100%; }
+  max-width: 80%; }
 
 span.frame {
   display: block;
